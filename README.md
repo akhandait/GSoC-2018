@@ -16,7 +16,7 @@ The objective of this project was to add *complete support* for **Variational Au
 
 During the proposal period, I had planned to implement an independent class for VAEs. However, Sumedh suggested that to make it truly generic and to allow all sorts of hierarchical models, it will be better if we implemented the extra components needed and allow them to integrate seamlessly with the rest of the codebase. We went ahead with that plan and now **mlpack** can be used to implement almost all VAE architectures.
 
-Support for **conditional VAEs** needs a new layer which I will add after the GSoC period gets over. I had also planned to test some **recurrent** VAE models which I will continue to do after GSoC.
+Support for **conditional VAEs** needs a new layer for which I have opened a PR. I had also planned to test some **recurrent** VAE models which I will continue to do after GSoC.
 
 ### Overview:
 
@@ -24,7 +24,7 @@ The project can now be broken down into **3 major tasks:**
 
 1. Implemented a **Reparametrization**(Sampling) layer which includes **Kullback Leibler** loss. A **visitor** was added to collect extra losses(in this case KL) from all the layers. It supports **beta**-VAEs.
 2. Implemented a **ReconstructionLoss** class. Along with it, two model distributions were implemented. **Bernoulli** distribution has been merged. **Normal** distribution, though tested rigorously, couldn't model the  **MNIST** dataset well, so the PR has been kept on hold.
-3. Implemented *multilayer perceptron* and *convolutional* VAE models(in the [mlpack/models](https://github.com/mlpack/models) repository) and trained them on **MNIST** and **Binary MNIST**. Wrote some generation scripts and experimented with the learned distribution. Tested beta-VAEs. While training it on a much bigger **CelebA** dataset, ran into performance issues. Opened a PR improving the **TransposedConvolution** layer.
+3. Implemented *multilayer perceptron* and *convolutional* VAE models(in the [mlpack/models](https://github.com/mlpack/models) repository) and trained them on **MNIST** and **Binary MNIST**. Wrote some generation scripts and experimented with the learned distribution. Tested beta-VAEs. While training it on a much bigger **CelebA** dataset, ran into performance issues. Opened a PR improving the **TransposedConvolution** layer. For conditional VAEs, implemented a new **Concatenate** layer.
 
 [Weekly updates](http://www.mlpack.org/gsocblog/AtharvaKhandaitPage.html) I made on **mlpack's** blog.
 
@@ -55,6 +55,8 @@ _The pull requests opened in the GSoC period that are currently **being reviewed
 [[WIP] Add Variational Autoencoder model for MNIST](https://github.com/mlpack/models/pull/14) (in the mlpack/models repository)
 
 [Improve TransposedConvolution layer](https://github.com/mlpack/mlpack/pull/1493)
+
+[[WIP] Add Concatenate layer.](https://github.com/mlpack/mlpack/pull/1495)
 
 ### Results:
 
