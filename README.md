@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="556" height="112" src="https://github.com/akhandait/GSoC-2018/blob/master/src/logo.png">
+  <img width="556" height="112" src="https://i.imgur.com/wULSnAS.png">
 </p>
 
 #### Organisation: [mlpack](https://github.com/mlpack) 
@@ -63,13 +63,13 @@ _The pull requests opened in the GSoC period that are currently **being reviewed
 Here are some results that have been generated after training on the **MNIST** dataset:
 
 <p align="center">
-<img width="500" height="300" src="https://github.com/akhandait/GSoC-2018/blob/master/src/allLatent.png">
+<img width="500" height="300" src="https://i.imgur.com/5dTXnlB.png">
 </p>
 
 The above samples are the result of modifying each of the 10 latent variables independently.
 
 <p align="center">
-<img width="500" height="500" src="https://github.com/akhandait/GSoC-2018/blob/master/src/2dLatent.png">
+<img width="500" height="500" src="https://i.imgur.com/Hyc23w0.png">
 </p>
 
 The above samples are the result of varying 2 latent variables in 2D. 
@@ -77,13 +77,13 @@ The above samples are the result of varying 2 latent variables in 2D.
 Sampling from the model trained on **Binary MNIST**:
 
 <p align="center">
-<img width="550" height="30" src="https://github.com/akhandait/GSoC-2018/blob/master/src/priorBinary.png">
+<img width="550" height="30" src="https://i.imgur.com/ubv7UrP.png">
 </p>
 
 The above samples are from the **prior**.
 
 <p align="center">
-<img width="550" height="30" src="https://github.com/akhandait/GSoC-2018/blob/master/src/posteriorBinary.png">
+<img width="550" height="30" src="https://i.imgur.com/cF52qyS.png">
 </p>
 
 The above samples are from the **posterior**.
